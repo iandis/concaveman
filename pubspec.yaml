@@ -1,0 +1,21 @@
+name: concaveman
+description: 'A very fast 2D concave hull algorithm in JavaScript (generates a general outline of a point set).'
+version: 0.0.1
+homepage: github.com/iandis/concaveman
+
+environment:
+  sdk: '>=3.4.4 <4.0.0'
+  flutter: '>=3.22.0'
+
+dependencies:
+  collection: ^1.18.0
+  flutter:
+    sdk: flutter
+  rbush: ^1.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
