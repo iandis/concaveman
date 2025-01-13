@@ -5,7 +5,7 @@ import 'package:concaveman/src/orient2d.dart';
 import 'package:concaveman/src/point_in_polygon.dart';
 import 'package:rbush/rbush.dart';
 
-List<Point<double>> concaveman<T>(List<Point<double>> points, [int? concavity, double? lengthThreshold]) {
+List<Point<double>> concaveman<T>(List<Point<double>> points, [double? concavity, double? lengthThreshold]) {
   // a relative measure of concavity; higher value means simpler hull
   concavity = max(0, concavity ?? 2);
 
