@@ -99,7 +99,7 @@ List<Point<double>> fastConvexHull(List<Point<double>> points) {
   var cull = [left, top, right, bottom];
   var filtered = cull.toList();
   for (var i = 0; i < points.length; i++) {
-    if (!pointInPolygon(points[i], cull)) filtered.add(points[i]);
+    if (!isPointInPolygon(points[i], cull)) filtered.add(points[i]);
   }
 
   // get convex hull around the filtered points

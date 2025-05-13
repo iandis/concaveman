@@ -1,6 +1,6 @@
 import 'dart:math';
 
-bool pointInPolygon(Point<double> point, List<Point<double>> vs, [int start = 0, int? end]) {
+bool isPointInPolygon(Point<double> point, List<Point<double>> vs, [int start = 0, int? end]) {
   final Point(:x, :y) = point;
   var inside = false;
 
